@@ -10,3 +10,4 @@ Pour l'instant c'est la **V1** du site. C'est quelque chose que je vais essayer 
   - Ajouter une partie inscription
 - Formulaire de contact
 - Page à propos complète
+- Faire une traduction en anglais
