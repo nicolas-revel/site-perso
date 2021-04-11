@@ -50,29 +50,174 @@ $title = "Nicolas Revel - Portfolio";
       <h3>Mes compétences</h3>
       <div>
         <h4>Ce que j'ai appris...</h4>
-        <img src="assets/img/logos/HTML5.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/CSS3.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/PHP.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/MySQL.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Markdown.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Git.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Sass.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/JavaScript.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Jquery.svg" alt="Image test" style="height: 200px;">
+        <div class="card">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
+            <img src="assets/img/logos/HTML5.svg" alt="Logo de HTML" style="height: 200px;">
+            <p>HTML</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
+            <img src="assets/img/logos/CSS3.svg" alt="Logo de CSS" style="height: 200px;">
+            <p>CSS</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://getbootstrap.com/">
+            <img src="assets/img/logos/Bootstrap.svg" alt="Logo de Bootstrap" style="height: 200px;">
+            <p>Bootstrap</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.php.net/manual/fr/intro-whatis.php">
+            <img src="assets/img/logos/PHP.svg" alt="Logo de PHP" style="height: 200px;">
+            <p>PHP</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.mysql.com/fr/">
+            <img src="assets/img/logos/MySQL.svg" alt="Logo de MySQL" style="height: 200px;">
+            <p>MySQL</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://fr.wikipedia.org/wiki/Markdown">
+            <img src="assets/img/logos/Markdown.svg" alt="Logo de Markdown" style="height: 200px;">
+            <p>Markdown</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://git-scm.com/">
+            <img src="assets/img/logos/Git.svg" alt="Logo de Git" style="height: 200px;">
+            <p>Git</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://sass-lang.com/">
+            <img src="assets/img/logos/Sass.svg" alt="Logo de SASS" style="height: 200px;">
+            <p>SASS/SCSS</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+            <img src="assets/img/logos/JavaScript.svg" alt="Logo de JavaScript" style="height: 200px;">
+            <p>JavaScript</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://jquery.com/">
+            <img src="assets/img/logos/Jquery.svg" alt="Logo de JQuery" style="height: 200px;">
+            <p>JQuery</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://wordpress.org/">
+            <img src="assets/img/logos/Wordpress.svg" alt="Logo de Wordpress" style="height: 200px;">
+            <p>Wordpress</p>
+          </a>
+        </div>
       </div>
       <div>
         <h4>... ce que je vais savoir.</h4>
-        <img src="assets/img/logos/Angularjs.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Node.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Symfony.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/React.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Vue.svg" alt="Image test" style="height: 200px;">
-        <img src="assets/img/logos/Python.svg" alt="Image test" style="height: 200px;">
+        <div class="card">
+          <a href="https://angular.io/">
+            <img src="assets/img/logos/Angularjs.svg" alt="Logo de Angular" style="height: 200px;">
+            <p>Angular</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://nodejs.org/en/">
+            <img src="assets/img/logos/Node.svg" alt="Logo de NodeJs" style="height: 200px;">
+            <p>NodeJS</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://symfony.com/">
+            <img src="assets/img/logos/Symfony.svg" alt="Logo de Symfony" style="height: 200px;">
+            <p>Symfony</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.slimframework.com/">
+            <img src="assets/img/logos/Slim.png" alt="Logo de Slim Framework" style="height: 200px;">
+            <p>Slim</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://fr.reactjs.org/">
+            <img src="assets/img/logos/React.svg" alt="Logo de React" style="height: 200px;">
+            <p>React</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://vuejs.org/">
+            <img src="assets/img/logos/Vue.svg" alt="Logo de VueJS" style="height: 200px;">
+            <p>VueJS</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.python.org/">
+            <img src="assets/img/logos/Python.svg" alt="" style="height: 200px;">
+            <p>Python</p>
+          </a>
+        </div>
       </div>
       <div>
         <h4>Mes outils </h4>
-        <img src="assets/img/logos/VSCode.svg" alt="Image test" style="height: 200px;">
-        
+        <div class="card">
+          <a href="https://code.visualstudio.com/">
+            <img src="assets/img/logos/VSCode.svg" alt="Logo de Visual Studio Code" style="height: 200px;">
+            <p>Visual Studio Code</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://github.com/">
+            <img src="assets/img/logos/Github.svg" alt="Logo de Github" style="height: 200px;">
+            <p>GitHub</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.gitkraken.com/">
+            <img src="assets/img/logos/gitkraken.svg" alt="Logo de GitKraken" style="height: 200px;">
+            <p>GitKraken</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://stackoverflow.com/">
+            <img src="assets/img/logos/Stack-overflow.svg" alt="Logo de Stack-Overflow" style="height: 200px;">
+            <p>Stack-Overflow</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://getcomposer.org/">
+            <img src="assets/img/logos/Composer.svg" alt="Logo de Composer" style="height: 200px;">
+            <p>Composer</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.npmjs.com/">
+            <img src="assets/img/logos/Npm.svg" alt="Logo de NPM" style="height: 200px;">
+            <p>NPM</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.figma.com/">
+            <img src="assets/img/logos/Figma.svg" alt="Logo de Figma" style="height: 200px;">
+            <p>Figma</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://kubuntu.org/">
+            <img src="assets/img/logos/Kubuntu.svg" alt="Logo de Kubuntu" style="height: 200px;">
+            <p>Kubuntu</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://trello.com/">
+            <img src="assets/img/logos/Trello.svg" alt="Logo de Trello" style="height: 200px;">
+            <p>Trello</p>
+          </a>
+        </div>
       </div>
     </section>
     <section id="projects">
