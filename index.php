@@ -13,29 +13,45 @@ $title = "Nicolas Revel - Portfolio";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bonjour et bienvenue sur mon portfolio ! Je vous souhaite une bonne visite et n'hésitez pas à me contacter si vous souhaitez collaborer avec moi sur vos projets.">
   <meta name="keywords" content="Nicolas Revel, développeur web, développeur mobile, La plateforme, Marseille">
+  <link rel="stylesheet" href="style/css/style.css">
   <title><?= $title ?></title>
 </head>
 
 <body>
   <header>
-    <h1>Nicolas Revel - Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="wip.php?page=projects">Projets</a></li>
-        <li><a href="wip.php?page=about">A propos</a></li>
-        <li><a href="wip.php?page=contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div id="title">
+      <a href="#home">
+        <h1>Nicolas Revel</h1>
+        <h2 id="subtitle">Développeur web fullstack</h2>
+      </a>
+    </div>
+    <div id="navopener">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+    <div id="myNav" class="responsive">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="responsive-content">
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#about">Mon parcours</a>
+        <a href="#contact">Réseaux Sociaux et Contact</a>
+      </div>
+    </div>
+    <div class="nonresponsive">
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#about">Mon parcours</a>
+      <a href="#contact">Réseaux Sociaux et Contact</a>
+    </div>
   </header>
 
   <main>
-    <section>
+    <section id="home">
       <h2>Nicolas Revel</h2>
-      <p><span>Développeur Web Fullstack</span></p>
-      <p>Actuellement en recherche d'une alternance à partir de Septembre 2021</p>
+      <p id="home-subtitle">Développeur Web Fullstack</p>
+      <p id="wish">Actuellement en recherche d'une alternance à partir de Septembre 2021</p>
       <nav>
-        <ul>
+        <ul id="">
           <li><a href="#skills">Compétences</a></li>
           <li><a href="#projects">Projets</a></li>
           <li><a href="#about">Mon parcours</a></li>
@@ -51,68 +67,68 @@ $title = "Nicolas Revel - Portfolio";
       <div>
         <h4>Ce que j'ai appris...</h4>
         <div class="card">
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
-            <img src="assets/img/logos/HTML5.svg" alt="Logo de HTML" style="height: 200px;">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">
+            <img src="assets/img/logos/HTML5.svg" alt="Logo de HTML" style="width: 200px;">
             <p>HTML</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
-            <img src="assets/img/logos/CSS3.svg" alt="Logo de CSS" style="height: 200px;">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank">
+            <img src="assets/img/logos/CSS3.svg" alt="Logo de CSS" style="width: 200px;">
             <p>CSS</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://getbootstrap.com/">
-            <img src="assets/img/logos/Bootstrap.svg" alt="Logo de Bootstrap" style="height: 200px;">
+          <a href="https://getbootstrap.com/" target="_blank">
+            <img src="assets/img/logos/Bootstrap.svg" alt="Logo de Bootstrap" style="width: 200px;">
             <p>Bootstrap</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.php.net/manual/fr/intro-whatis.php">
-            <img src="assets/img/logos/PHP.svg" alt="Logo de PHP" style="height: 200px;">
+          <a href="https://www.php.net/manual/fr/intro-whatis.php" target="_blank">
+            <img src="assets/img/logos/PHP.svg" alt="Logo de PHP" style="width: 200px;">
             <p>PHP</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.mysql.com/fr/">
-            <img src="assets/img/logos/MySQL.svg" alt="Logo de MySQL" style="height: 200px;">
+          <a href="https://www.mysql.com/fr/" target="_blank">
+            <img src="assets/img/logos/MySQL.svg" alt="Logo de MySQL" style="width: 200px;">
             <p>MySQL</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://fr.wikipedia.org/wiki/Markdown">
-            <img src="assets/img/logos/Markdown.svg" alt="Logo de Markdown" style="height: 200px;">
+          <a href="https://fr.wikipedia.org/wiki/Markdown" target="_blank">
+            <img src="assets/img/logos/Markdown.svg" alt="Logo de Markdown" style="width: 200px;">
             <p>Markdown</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://git-scm.com/">
-            <img src="assets/img/logos/Git.svg" alt="Logo de Git" style="height: 200px;">
+          <a href="https://git-scm.com/" target="_blank">
+            <img src="assets/img/logos/Git.svg" alt="Logo de Git" style="width: 200px;">
             <p>Git</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://sass-lang.com/">
-            <img src="assets/img/logos/Sass.svg" alt="Logo de SASS" style="height: 200px;">
+          <a href="https://sass-lang.com/" target="_blank">
+            <img src="assets/img/logos/Sass.svg" alt="Logo de SASS" style="width: 200px;">
             <p>SASS/SCSS</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
-            <img src="assets/img/logos/JavaScript.svg" alt="Logo de JavaScript" style="height: 200px;">
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">
+            <img src="assets/img/logos/JavaScript.svg" alt="Logo de JavaScript" style="width: 200px;">
             <p>JavaScript</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://jquery.com/">
-            <img src="assets/img/logos/Jquery.svg" alt="Logo de JQuery" style="height: 200px;">
+          <a href="https://jquery.com/" target="_blank">
+            <img src="assets/img/logos/Jquery.svg" alt="Logo de JQuery" style="width: 200px;">
             <p>JQuery</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://wordpress.org/">
-            <img src="assets/img/logos/Wordpress.svg" alt="Logo de Wordpress" style="height: 200px;">
+          <a href="https://wordpress.org/" target="_blank">
+            <img src="assets/img/logos/Wordpress.svg" alt="Logo de Wordpress" style="width: 200px;">
             <p>Wordpress</p>
           </a>
         </div>
@@ -120,44 +136,44 @@ $title = "Nicolas Revel - Portfolio";
       <div>
         <h4>... ce que je vais savoir.</h4>
         <div class="card">
-          <a href="https://angular.io/">
-            <img src="assets/img/logos/Angularjs.svg" alt="Logo de Angular" style="height: 200px;">
+          <a href="https://angular.io/" target="_blank">
+            <img src="assets/img/logos/Angularjs.svg" alt="Logo de Angular" style="width: 200px;">
             <p>Angular</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://nodejs.org/en/">
-            <img src="assets/img/logos/Node.svg" alt="Logo de NodeJs" style="height: 200px;">
+          <a href="https://nodejs.org/en/" target="_blank">
+            <img src="assets/img/logos/Node.svg" alt="Logo de NodeJs" style="width: 200px;">
             <p>NodeJS</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://symfony.com/">
-            <img src="assets/img/logos/Symfony.svg" alt="Logo de Symfony" style="height: 200px;">
+          <a href="https://symfony.com/" target="_blank">
+            <img src="assets/img/logos/Symfony.svg" alt="Logo de Symfony" style="width: 200px;">
             <p>Symfony</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.slimframework.com/">
-            <img src="assets/img/logos/Slim.png" alt="Logo de Slim Framework" style="height: 200px;">
+          <a href="https://www.slimframework.com/" target="_blank">
+            <img src="assets/img/logos/Slim.png" alt="Logo de Slim Framework" style="width: 200px;">
             <p>Slim</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://fr.reactjs.org/">
-            <img src="assets/img/logos/React.svg" alt="Logo de React" style="height: 200px;">
+          <a href="https://fr.reactjs.org/" target="_blank">
+            <img src="assets/img/logos/React.svg" alt="Logo de React" style="width: 200px;">
             <p>React</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://vuejs.org/">
-            <img src="assets/img/logos/Vue.svg" alt="Logo de VueJS" style="height: 200px;">
+          <a href="https://vuejs.org/" target="_blank">
+            <img src="assets/img/logos/Vue.svg" alt="Logo de VueJS" style="width: 200px;">
             <p>VueJS</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.python.org/">
-            <img src="assets/img/logos/Python.svg" alt="" style="height: 200px;">
+          <a href="https://www.python.org/" target="_blank">
+            <img src="assets/img/logos/Python.svg" alt="" style="width: 200px;">
             <p>Python</p>
           </a>
         </div>
@@ -165,56 +181,56 @@ $title = "Nicolas Revel - Portfolio";
       <div>
         <h4>Mes outils </h4>
         <div class="card">
-          <a href="https://code.visualstudio.com/">
-            <img src="assets/img/logos/VSCode.svg" alt="Logo de Visual Studio Code" style="height: 200px;">
+          <a href="https://code.visualstudio.com/" target="_blank">
+            <img src="assets/img/logos/VSCode.svg" alt="Logo de Visual Studio Code" style="width: 200px;">
             <p>Visual Studio Code</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://github.com/">
-            <img src="assets/img/logos/Github.svg" alt="Logo de Github" style="height: 200px;">
+          <a href="https://github.com/" target="_blank">
+            <img src="assets/img/logos/Github.svg" alt="Logo de Github" style="width: 200px;">
             <p>GitHub</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.gitkraken.com/">
-            <img src="assets/img/logos/gitkraken.svg" alt="Logo de GitKraken" style="height: 200px;">
+          <a href="https://www.gitkraken.com/" target="_blank">
+            <img src="assets/img/logos/gitkraken.svg" alt="Logo de GitKraken" style="width: 200px;">
             <p>GitKraken</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://stackoverflow.com/">
-            <img src="assets/img/logos/Stack-overflow.svg" alt="Logo de Stack-Overflow" style="height: 200px;">
+          <a href="https://stackoverflow.com/" target="_blank">
+            <img src="assets/img/logos/Stack-overflow.svg" alt="Logo de Stack-Overflow" style="width: 200px;">
             <p>Stack-Overflow</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://getcomposer.org/">
-            <img src="assets/img/logos/Composer.svg" alt="Logo de Composer" style="height: 200px;">
+          <a href="https://getcomposer.org/" target="_blank">
+            <img src="assets/img/logos/Composer.svg" alt="Logo de Composer" style="width: 200px;">
             <p>Composer</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.npmjs.com/">
-            <img src="assets/img/logos/Npm.svg" alt="Logo de NPM" style="height: 200px;">
+          <a href="https://www.npmjs.com/" target="_blank">
+            <img src="assets/img/logos/Npm.svg" alt="Logo de NPM" style="width: 200px;">
             <p>NPM</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://www.figma.com/">
-            <img src="assets/img/logos/Figma.svg" alt="Logo de Figma" style="height: 200px;">
+          <a href="https://www.figma.com/" target="_blank">
+            <img src="assets/img/logos/Figma.svg" alt="Logo de Figma" style="width: 200px;">
             <p>Figma</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://kubuntu.org/">
-            <img src="assets/img/logos/Kubuntu.svg" alt="Logo de Kubuntu" style="height: 200px;">
+          <a href="https://kubuntu.org/" target="_blank">
+            <img src="assets/img/logos/Kubuntu.svg" alt="Logo de Kubuntu" style="width: 200px;">
             <p>Kubuntu</p>
           </a>
         </div>
         <div class="card">
-          <a href="https://trello.com/">
-            <img src="assets/img/logos/Trello.svg" alt="Logo de Trello" style="height: 200px;">
+          <a href="https://trello.com/" target="_blank">
+            <img src="assets/img/logos/Trello.svg" alt="Logo de Trello" style="width: 200px;">
             <p>Trello</p>
           </a>
         </div>
@@ -222,9 +238,12 @@ $title = "Nicolas Revel - Portfolio";
     </section>
     <section id="projects">
       <h3>Mes projets</h3>
-      <img src="https://picsum.photos/200/150" alt="Screenshot 1">
-      <img src="https://picsum.photos/200/150" alt="Screenshot 2">
-      <img src="https://picsum.photos/200/150" alt="Screenshot 3">
+      <img src="assets/img/screenshots/screenshot_wip.png" alt="Screenshot de mon projet Work in Progress" style="width: 300px;">
+      <img src="assets/img/screenshots/screenshot_fansite.png" alt="Screenshot de mon projet de Fansite" style="width: 300px;">
+      <img src="assets/img/screenshots/screenshot_livreor.png" alt="Screenshot de mon projet de Livre d'Or" style="width: 300px;">
+      <img src="assets/img/screenshots/screenshot_discussion.png" alt="Screenshot de mon projet de site de discussion" style="width: 300px;">
+      <img src="assets/img/screenshots/screenshot_blougout.png" alt="Screenshot de mon projet Blougout, site de blog sur le web" style="width: 300px;">
+      <img src="assets/img/screenshots/screenshot_boutique.png" alt="Screenshot de mon projet Jungle Gardener, projet de boutique en ligne" style="width: 300px;">
       <p>Je réalise actuellement ma formation de développeur web, à <a href="https://www.laplateforme.io">La Plateforme_</a> qui a une méthode de formation par projet. Par conséquent, même si je n'ai pas encore eu d'expérience professionnelle, j'ai eu l'occasion de faire plusieurs projets.</p>
       <p>Parmis ces projets, j'ai pu réaliser un site de discussion, un projet de blog, ainsi qu'un projet de boutique en ligne factice. Vous pouvez découvrir mes projets via <a href="https://github.com/nicolas-revel/">mon github</a>.</p>
       <a href="https://github.com/nicolas-revel/"><button>Mon GitHub</button></a>
@@ -234,6 +253,7 @@ $title = "Nicolas Revel - Portfolio";
       <p>Diplômé d'un Master de Neuropsychologie clinique et intégrative, j'ai décidé, à la suite de mes expériences en stages, de m'orienter vers le développment informatique.</p>
       <p>Je suis passioné par le milieu de la tech dans son ensemble, et j'ai eu la chance d'intégrer <a href="https://www.laplateforme.io">La Plateforme_</a> pour me lancer dans une formation avec un apprentissage par projet.</p>
       <p>Mes objectifs sont maintenant de trouver une alternance de 12 mois pour Septembre 2021. A long terme, j'aimerais me lancer dans une aventure entrepreunariale.</p>
+      <img src="assets/img/extras/carbon.svg" style="width: 200px;" alt="">
       <!-- Ajouter une petite image en mode script JS -->
     </section>
     <section id="contact">
@@ -253,6 +273,8 @@ $title = "Nicolas Revel - Portfolio";
   <footer>
     <p><span>Made by Nicolas Revel</span></p>
   </footer>
+
+  <script src="javascript/script.js" type="text/Javascript"></script>
 </body>
 
 </html>

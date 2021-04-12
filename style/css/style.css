@@ -1,0 +1,261 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3142ff;
+  color: #bfc0c0ff;
+  height: 70px;
+  min-height: 70px;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  header {
+    align-items: center;
+    min-height: 70px;
+  }
+}
+
+#title a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px 0px 0px 6%;
+  width: 30vw;
+}
+#title h1 {
+  color: #bfc0c0ff;
+  margin: 0px;
+  font-size: 30px;
+}
+#title #subtitle {
+  color: #bfc0c0ff;
+  margin: 0px;
+  font-size: 15px;
+}
+@media screen and (max-width: 769px) {
+  #title a {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+  }
+  #title h1 {
+    font-size: 25px;
+  }
+  #title #subtitle {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 426px) {
+  #title a {
+    width: 80vw;
+  }
+  #title h1 {
+    font-size: 20px;
+  }
+  #title #subtitle {
+    font-size: 10px;
+  }
+}
+
+#navopener {
+  color: #ef8354ff;
+  margin-right: 1rem;
+  font-size: 40px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  #navopener {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  #navopener {
+    font-size: 20px;
+  }
+}
+
+.responsive {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4f5d75e1;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+@media screen and (max-height: 450px) {
+  .responsive {
+    overflow-y: auto;
+  }
+}
+.responsive-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.responsive a {
+  padding: 8px;
+  margin-bottom: 5%;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ef8354ff;
+  display: block;
+  transition: 0.3s;
+}
+.responsive a:hover {
+  color: #eb6125;
+}
+.responsive a:focus {
+  color: #eb6125;
+}
+@media screen and (max-height: 450px) {
+  .responsive a {
+    font-size: 20px;
+  }
+}
+.responsive .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .responsive .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.nonresponsive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 68vw;
+  max-width: 750px;
+  padding-right: 5%;
+}
+.nonresponsive a {
+  text-decoration: none;
+  text-align: center;
+  color: #ef8354ff;
+  font-size: 2vw;
+  padding-right: 3%;
+  border-right: solid 2px #ef8354ff;
+}
+@media screen and (min-width: 1025px) {
+  .nonresponsive a {
+    font-size: 22px;
+  }
+}
+.nonresponsive a:hover {
+  color: #eb6125;
+  transition: 200ms ease-in-out;
+}
+@media screen and (max-width: 769px) {
+  .nonresponsive {
+    display: none;
+  }
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100vh - 70px);
+  background-color: #4f5d75ff;
+}
+#home h2 {
+  align-self: flex-start;
+  margin-left: 10%;
+  font-size: 8vw;
+}
+#home #home-subtitle {
+  font-size: 6vw;
+}
+#home #wish {
+  font-size: 3vw;
+  line-height: 2em;
+}
+@media screen and (max-width: 769px) {
+  #home #wish {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
