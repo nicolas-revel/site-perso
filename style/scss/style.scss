@@ -12,6 +12,7 @@ html {
 	flex-direction: column;
 	height: 100%;
 	align-items: center;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -21,20 +22,23 @@ body {
 	width: 100%;
 	height: 100%;
 	max-width: 1500px;
+	justify-content: space-between;
 }
 
 header {
-	position: sticky;
-	top: 0;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	background-color: $space-cadet;
 	color: $silver;
+	border-bottom: solid darken($color: $mandarin, $amount: 5) 3px;
 	height: 70px;
 	min-height: 70px;
 	width: 100%;
+	max-width: 1500px;
+  z-index: 9;
 	@media screen and (min-width: $medium) {
 		align-items: center;
 		min-height: 70px;
@@ -70,10 +74,10 @@ header {
 			width: 80vw;
 		}
 		h1 {
-			font-size: 25px;
+			font-size: 28px;
 		}
 		#subtitle {
-			font-size: 15px;
+			font-size: 17px;
 		}
 	}
 	@media screen and (max-width: $small) {
@@ -81,10 +85,10 @@ header {
 			width: 80vw;
 		}
 		h1 {
-			font-size: 20px;
+			font-size: 23px;
 		}
 		#subtitle {
-			font-size: 10px;
+			font-size: 11px;
 		}
 	}
 }
@@ -183,25 +187,216 @@ header {
 }
 
 #home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 	height: calc(100vh - 70px);
+	margin-top: 70px;
 	background-color: $independence;
-  h2 {
-    align-self: flex-start;
-    margin-left: 10%;
-    font-size: 8vw;
-  }
-  #home-subtitle {
-    font-size: 6vw;
-  }
-  #wish {
-    font-size: 3vw;
-    line-height: 2em;
-    @media screen and (max-width:$medium) {
-      font-size: 18px;
-    }
-  }
+	h2 {
+		color: lighten($color: $mandarin, $amount: 10);
+		align-self: flex-start;
+		margin-left: 10%;
+		font-size: 8vw;
+		@media screen and (min-width: $large) {
+			font-size: 85px;
+		}
+	}
+	#home-subtitle {
+		color: $silver;
+		font-size: 6vw;
+		@media screen and (min-width: $large) {
+			font-size: 65px;
+		}
+	}
+	#wish {
+		color: darken($color: $silver, $amount: 20);
+		font-size: 3vw;
+		line-height: 2em;
+		@media screen and (max-width: $medium) {
+			text-align: center;
+			font-size: 20px;
+		}
+		@media screen and (min-width: $large) {
+			font-size: 35px;
+		}
+	}
+	nav {
+		height: 30%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#downarrow:hover {
+		transform: translateY(10px);
+		transition: ease-in-out 200ms;
+	}
+}
+
+#navhomepage {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	a {
+		text-decoration: none;
+		color: $mandarin;
+		@media screen and (max-width: $small) {
+			font-size: 25px;
+		}
+		@media screen and (max-width: $medium) and (min-width: $small) {
+			font-size: 35px;
+		}
+		@media screen and (max-width: $large) and (min-width: $medium) {
+			font-size: 27px;
+		}
+		@media screen and (min-width: $large) {
+			font-size: 35px;
+		}
+	}
+	@media screen and (min-width: $medium) {
+		flex-direction: row;
+		width: 90%;
+	}
+}
+
+#skills {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	background-color: lighten($color: $silver, $amount: 10);
+	padding-bottom: 2em;
+}
+
+section {
+	padding: 2.5em 0em;
+}
+
+h3 {
+	margin: 1em 0em 1em 1em;
+	align-self: flex-start;
+	font-size: 35px;
+}
+
+h4 {
+	font-size: 25px;
+	margin: 1em 0em 1em 6em;
+	align-self: flex-start;
+}
+
+.skill-group {
+	@extend #skills;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 95%;
+	justify-content: space-around;
+}
+
+.card {
+	border: solid 3px black;
+	border-radius: 10px;
+	margin: 0.5em;
+	width: 27%;
+	max-width: 150px;
+	padding: 1em;
+	background-color: lighten($color: $mandarin, $amount: 30);
+	box-shadow: 5px 2.5px 2.5px rgba(45, 49, 66, 0.651);
+	a {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-decoration: none;
+		img {
+			width: 100%;
+			max-height: 100px;
+		}
+	}
+	p {
+		color: black;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 0.5em;
+		@media screen and (max-width: $small) {
+			font-size: 17px;
+		}
+		&.marged-text {
+			margin-top: 2em;
+		}
+	}
+	&:hover {
+		transform: scale(1.05);
+		transition: ease-in-out 300ms;
+	}
+}
+
+/**
+Caroussel
+*/
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	&_screenshots {
+		width: 95%;
+	}
+}
+
+.carousel {
+	position: relative;
+	align-self: center;
+	overflow: hidden;
+  z-index: 0;
+	&__container {
+		transition: transform 300ms;
+		transform: translate3d(0, 0, 0);
+		&::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	}
+	&__item {
+		float: left;
+		padding: 3em;
+	}
+}
+
+.carousel__next {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: (transparentize($color: $white, $amount: 1))
+		url("../../assets/img/elements/angle-right-solid.svg") center center
+		no-repeat;
+	background-size: 20px;
+	border-radius: 50%;
+	top: 50%;
+	margin-top: -20px;
+	right: 0px;
+	cursor: pointer;
+	transition: transform 300ms;
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.carousel__prev {
+	@extend .carousel__next;
+	background: (transparentize($color: $white, $amount: 1))
+		url("../../assets/img/elements/angle-left-solid.svg") center center
+		no-repeat;
+	right: auto;
+	left: 0px;
 }
