@@ -571,9 +571,14 @@ Caroussel
 #contact .links {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 75%;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 426px) {
+  #contact .links {
+    flex-direction: column;
+  }
 }
 #contact .socials {
   margin: 1em;

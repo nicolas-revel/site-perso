@@ -504,9 +504,12 @@ Caroussel
 	.links {
 		display: flex;
 		flex-direction: row;
-		width: 70%;
+		width: 75%;
 		justify-content: space-between;
 		align-items: center;
+		@media screen and(max-width:$small) {
+			flex-direction: column;
+		}
 	}
 	.socials {
 		margin: 1em;
