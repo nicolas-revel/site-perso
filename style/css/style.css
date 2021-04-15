@@ -43,12 +43,19 @@ td, th {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
 html {
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   align-items: center;
   scroll-behavior: smooth;
+  background-color: #fce8e0;
 }
 
 body {
@@ -74,7 +81,7 @@ header {
   min-height: 70px;
   width: 100%;
   max-width: 1500px;
-  z-index: 9;
+  z-index: 3;
 }
 @media screen and (min-width: 769px) {
   header {
@@ -96,7 +103,7 @@ header {
 #title h1 {
   color: #bfc0c0ff;
   margin: 0px;
-  font-size: 30px;
+  font-size: 35px;
 }
 #title #subtitle {
   color: #bfc0c0ff;
@@ -122,10 +129,10 @@ header {
     width: 80vw;
   }
   #title h1 {
-    font-size: 23px;
+    font-size: 25px;
   }
   #title #subtitle {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -242,6 +249,7 @@ header {
   align-items: center;
   justify-content: space-around;
   height: calc(100vh - 70px);
+  max-height: 987px;
   margin-top: 70px;
   background-color: #4f5d75ff;
 }
@@ -332,6 +340,7 @@ header {
 }
 
 #skills, .skill-group {
+  scroll-margin-top: 70px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -341,20 +350,21 @@ header {
   padding-bottom: 2em;
 }
 
-section {
-  padding: 2.5em 0em;
-}
-
 h3 {
   margin: 1em 0em 1em 1em;
   align-self: flex-start;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 h4 {
   font-size: 25px;
   margin: 1em 0em 1em 6em;
   align-self: flex-start;
+}
+@media screen and (max-width: 769px) {
+  h4 {
+    margin-left: 1em;
+  }
 }
 
 .cards {
@@ -409,13 +419,51 @@ h4 {
 Caroussel
 */
 #projects {
+  scroll-margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  color: #424860;
+  background-color: white;
 }
 #projects_screenshots {
   width: 95%;
+  max-width: 750px;
+}
+#projects a {
+  text-decoration: none;
+  color: #ef8354ff;
+  font-weight: bold;
+}
+#projects a:hover {
+  color: #eb6125;
+}
+#projects p {
+  margin: 1em 0em;
+  text-align: justify;
+  width: 85%;
+  font-size: 19px;
+}
+@media screen and (min-width: 1025px) {
+  #projects p {
+    font-size: 24px;
+  }
+}
+#projects button {
+  padding: 0.8em 1.6em;
+  background-color: #ef8354ff;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #181a24;
+  margin-bottom: 3em;
+}
+#projects button:hover {
+  background-color: #ed723d;
 }
 
 .carousel {
@@ -459,6 +507,129 @@ Caroussel
   background: rgba(255, 255, 255, 0) url("../../assets/img/elements/angle-left-solid.svg") center center no-repeat;
   right: auto;
   left: 0px;
+}
+
+#about {
+  padding: 40px 0px;
+  background-color: #bdc5d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about .content {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1025px) {
+  #about .content {
+    flex-direction: column;
+  }
+}
+#about .content img {
+  width: 90%;
+  max-width: 600px;
+}
+#about .content .text {
+  width: 90%;
+  max-width: 680px;
+}
+#about .content .text p {
+  margin: 2em 0em;
+  text-align: justify;
+  font-size: 20px;
+}
+#about .content .text a {
+  color: #ef8354ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+#about .content .text a:hover {
+  color: #eb6125;
+}
+
+#contact {
+  scroll-padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #61698e;
+  color: #bfc0c0ff;
+}
+#contact p {
+  width: 80%;
+  font-size: 20px;
+}
+@media screen and (min-width: 769px) {
+  #contact p {
+    font-size: 30px;
+  }
+}
+#contact .links {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact .socials {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+}
+#contact a {
+  margin: 1em;
+  text-decoration: none;
+  color: #ef8354ff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact a:hover {
+  color: #eb6125;
+}
+#contact a img {
+  margin-right: 1em;
+}
+#contact button {
+  padding: 0.8em 1.6em;
+  background-color: #ef8354ff;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #181a24;
+  margin: 1em 0em;
+}
+#contact button:hover {
+  background-color: #ed723d;
+}
+
+footer {
+  background-color: #2d3142ff;
+}
+footer div {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #fce8e0;
+  font-size: 20px;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

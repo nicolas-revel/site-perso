@@ -1,6 +1,11 @@
 @import "libs/responsive.scss";
 @import "libs/reset.scss";
 
+@font-face {
+	font-family: "Roboto";
+	src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
 $space-cadet: #2d3142ff;
 $independence: #4f5d75ff;
 $silver: #bfc0c0ff;
@@ -8,11 +13,14 @@ $white: #ffffffff;
 $mandarin: #ef8354ff;
 
 html {
+	font-family: "Roboto";
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	width: 100%;
 	align-items: center;
 	scroll-behavior: smooth;
+	background-color: lighten($color: $mandarin, $amount: 30);
 }
 
 body {
@@ -38,7 +46,7 @@ header {
 	min-height: 70px;
 	width: 100%;
 	max-width: 1500px;
-  z-index: 9;
+	z-index: 3;
 	@media screen and (min-width: $medium) {
 		align-items: center;
 		min-height: 70px;
@@ -59,7 +67,7 @@ header {
 	h1 {
 		color: $silver;
 		margin: 0px;
-		font-size: 30px;
+		font-size: 35px;
 	}
 	#subtitle {
 		color: $silver;
@@ -85,10 +93,10 @@ header {
 			width: 80vw;
 		}
 		h1 {
-			font-size: 23px;
+			font-size: 25px;
 		}
 		#subtitle {
-			font-size: 11px;
+			font-size: 12px;
 		}
 	}
 }
@@ -192,6 +200,7 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	height: calc(100vh - 70px);
+	max-height: 987px;
 	margin-top: 70px;
 	background-color: $independence;
 	h2 {
@@ -264,6 +273,7 @@ header {
 }
 
 #skills {
+	scroll-margin-top: 70px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -273,20 +283,19 @@ header {
 	padding-bottom: 2em;
 }
 
-section {
-	padding: 2.5em 0em;
-}
-
 h3 {
 	margin: 1em 0em 1em 1em;
 	align-self: flex-start;
-	font-size: 35px;
+	font-size: 40px;
 }
 
 h4 {
 	font-size: 25px;
 	margin: 1em 0em 1em 6em;
 	align-self: flex-start;
+	@media screen and (max-width: $medium) {
+		margin-left: 1em;
+	}
 }
 
 .skill-group {
@@ -344,12 +353,48 @@ Caroussel
 */
 
 #projects {
+	scroll-margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	color: lighten($color: $space-cadet, $amount: 10);
+	background-color: lighten($color: $mandarin, $amount: 50);
 	&_screenshots {
 		width: 95%;
+		max-width: 750px;
+	}
+	a {
+		text-decoration: none;
+		color: $mandarin;
+		font-weight: bold;
+		&:hover {
+			color: darken($color: $mandarin, $amount: 10);
+		}
+	}
+	p {
+		margin: 1em 0em;
+		text-align: justify;
+		width: 85%;
+		font-size: 19px;
+		@media screen and (min-width: $large) {
+			font-size: 24px;
+		}
+	}
+	button {
+		padding: 0.8em 1.6em;
+		background-color: $mandarin;
+		border-radius: 4px;
+		font-size: 18px;
+		font-family: "Roboto";
+		font-weight: 500;
+		outline: none;
+		border: none;
+		color: darken($color: $space-cadet, $amount: 10);
+		margin-bottom: 3em;
+		&:hover {
+			background-color: darken($color: $mandarin, $amount: 5);
+		}
 	}
 }
 
@@ -357,7 +402,7 @@ Caroussel
 	position: relative;
 	align-self: center;
 	overflow: hidden;
-  z-index: 0;
+	z-index: 0;
 	&__container {
 		transition: transform 300ms;
 		transform: translate3d(0, 0, 0);
@@ -399,4 +444,124 @@ Caroussel
 		no-repeat;
 	right: auto;
 	left: 0px;
+}
+
+#about {
+	padding: 40px 0px;
+	background-color: lighten($color: $independence, $amount: 40);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.content {
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width: $large) {
+			flex-direction: column;
+		}
+		img {
+			width: 90%;
+			max-width: 600px;
+		}
+		.text {
+			width: 90%;
+			max-width: 680px;
+			p {
+				margin: 2em 0em;
+				text-align: justify;
+				font-size: 20px;
+			}
+			a {
+				color: $mandarin;
+				text-decoration: none;
+				font-weight: bold;
+				&:hover {
+					color: darken($color: $mandarin, $amount: 10);
+				}
+			}
+		}
+	}
+}
+
+#contact {
+	scroll-padding-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: lighten($color: $space-cadet, $amount: 25);
+	color: $silver;
+	p {
+		width: 80%;
+		font-size: 20px;
+		@media screen and (min-width: $medium) {
+			font-size: 30px;
+		}
+	}
+	.links {
+		display: flex;
+		flex-direction: row;
+		width: 70%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.socials {
+		margin: 1em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 60%;
+	}
+	a {
+		margin: 1em;
+		text-decoration: none;
+		color: $mandarin;
+		font-weight: bold;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		&:hover {
+			color: darken($color: $mandarin, $amount: 10);
+		}
+		img {
+			margin-right: 1em;
+		}
+	}
+	button {
+		padding: 0.8em 1.6em;
+		background-color: $mandarin;
+		border-radius: 4px;
+		font-size: 18px;
+		font-family: "Roboto";
+		font-weight: 500;
+		outline: none;
+		border: none;
+		color: darken($color: $space-cadet, $amount: 10);
+		margin: 1em 0em;
+		&:hover {
+			background-color: darken($color: $mandarin, $amount: 5);
+		}
+	}
+}
+
+footer {
+	background-color: $space-cadet;
+	div {
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	p {
+		color: lighten($color: $mandarin, $amount: 30);
+		font-size: 20px;
+		align-self: center;
+	}
 }

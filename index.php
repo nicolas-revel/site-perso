@@ -5,7 +5,7 @@ $title = "Nicolas Revel - Portfolio";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -248,6 +248,7 @@ $title = "Nicolas Revel - Portfolio";
     </section>
     <section id="projects">
       <h3>Mes projets</h3>
+      <p>Je réalise actuellement ma formation de développeur web et web mobile, à <a href="https://www.laplateforme.io" target="_blank">La Plateforme_</a> qui a une méthode de formation par projet. Par conséquent, même si je n'ai pas encore eu d'expérience professionnelle, j'ai eu l'occasion de faire plusieurs projets dont certains sont présentés ici.</p>
       <div id="projects_screenshots">
         <img src="assets/img/screenshots/screenshot_wip.png" alt="Screenshot de mon projet Work in Progress">
         <img src="assets/img/screenshots/screenshot_fansite.png" alt="Screenshot de mon projet de Fansite">
@@ -256,34 +257,40 @@ $title = "Nicolas Revel - Portfolio";
         <img src="assets/img/screenshots/screenshot_blougout.png" alt="Screenshot de mon projet Blougout, site de blog sur le web">
         <img src="assets/img/screenshots/screenshot_boutique.png" alt="Screenshot de mon projet Jungle Gardener, projet de boutique en ligne">
       </div>
-      <p>Je réalise actuellement ma formation de développeur web, à <a href="https://www.laplateforme.io">La Plateforme_</a> qui a une méthode de formation par projet. Par conséquent, même si je n'ai pas encore eu d'expérience professionnelle, j'ai eu l'occasion de faire plusieurs projets.</p>
-      <p>Parmis ces projets, j'ai pu réaliser un site de discussion, un projet de blog, ainsi qu'un projet de boutique en ligne factice. Vous pouvez découvrir mes projets via <a href="https://github.com/nicolas-revel/">mon github</a>.</p>
+      <p>Parmis ces projets, j'ai pu réaliser un site de discussion, un projet de blog, ainsi qu'un projet de boutique en ligne factice. Vous pouvez découvrir mes projets via <a href="https://github.com/nicolas-revel/" target="_blank">mon github</a>. </p>
       <a href="https://github.com/nicolas-revel/"><button>Mon GitHub</button></a>
     </section>
     <section id="about">
       <h3>Mon parcours</h3>
-      <p>Diplômé d'un Master de Neuropsychologie clinique et intégrative, j'ai décidé, à la suite de mes expériences en stages, de m'orienter vers le développment informatique.</p>
-      <p>Je suis passioné par le milieu de la tech dans son ensemble, et j'ai eu la chance d'intégrer <a href="https://www.laplateforme.io">La Plateforme_</a> pour me lancer dans une formation avec un apprentissage par projet.</p>
-      <p>Mes objectifs sont maintenant de trouver une alternance de 12 mois pour Septembre 2021. A long terme, j'aimerais me lancer dans une aventure entrepreunariale.</p>
-      <img src="assets/img/extras/carbon.svg" alt="Petit écritaux en forme de Script Js pour montrer ma motivation">
-      <!-- Ajouter une petite image en mode script JS -->
+      <div class="content">
+        <div class="text">
+          <p>Diplômé d'un Master de Neuropsychologie clinique et intégrative, j'ai décidé, à la suite de mes expériences en stages, de m'orienter vers le développment informatique.</p>
+          <p>Je suis passioné par le milieu de la tech dans son ensemble, et j'ai eu la chance d'intégrer <a href="https://www.laplateforme.io">La Plateforme_</a> pour me lancer dans une formation avec un apprentissage par projet.</p>
+          <p>Mes objectifs sont maintenant de trouver une alternance de 12 mois pour Septembre 2021. A long terme, j'aimerais me lancer dans une aventure entrepreunariale.</p>
+        </div>
+        <img src="assets/img/extras/carbon.svg" alt="Petit écritaux en forme de Script Js pour montrer ma motivation">
+      </div>
     </section>
     <section id="contact">
       <h3>Me contacter</h3>
       <p>Si mon profil vous intéresse et que vous souhaitez collaborer avec moi à l'avenir, n'hésitez pas à me contacter et je ne manquerais pas de revenir vers vous au plus vite !</p>
-      <a href="mailto:nicolas.revel@laplateforme.io"><button>Me contacter</button></a>
+      <div class="links">
+        <a href="./assets/docs/CV_Nicolas_Revel_Dev.pdf" target="_blank"><button>Télécherger mon CV</button></a>
+        <a href="mailto:nicolas.revel@laplateforme.io"><button>Me contacter</button></a>
+      </div>
       <h4>Mes réseaux sociaux</h4>
-      <ul>
-        <li><a href="https://twitter.com/NicoRvl_Dev">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/nicolas-revel/">LinkedIn</a></li>
-        <li><a href="https://github.com/nicolas-revel/">GitHub</a></li>
-        <li><a href="https://stackoverflow.com/users/14775067/nicolas-revel">Stack-overflow</a></li>
-      </ul>
+      <div class="socials">
+        <a href="https://twitter.com/NicoRvl_Dev"><img src="https://img.icons8.com/color/48/000000/twitter-squared.png" />Twitter</a>
+        <a href="https://www.linkedin.com/in/nicolas-revel/"><img src="https://img.icons8.com/color/48/000000/linkedin.png" />LinkedIn</a>
+        <a href="https://github.com/nicolas-revel/"><img src="https://img.icons8.com/color/48/000000/github--v1.png" />GitHub</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p><span>Made by Nicolas Revel</span></p>
+    <div>
+      <p>Made by Nicolas Revel</p>
+    </div>
   </footer>
   <script src="javascript/script.js" type="text/Javascript"></script>
 </body>
