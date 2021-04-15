@@ -248,7 +248,7 @@ $title = "Nicolas Revel - Portfolio";
     </section>
     <section id="projects">
       <h3>Mes projets</h3>
-      <p>Je réalise actuellement ma formation de développeur web et web mobile, à <a href="https://www.laplateforme.io" target="_blank">La Plateforme_</a> qui a une méthode de formation par projet. Par conséquent, même si je n'ai pas encore eu d'expérience professionnelle, j'ai eu l'occasion de faire plusieurs projets dont certains sont présentés ici.</p>
+      <p>Je réalise actuellement ma formation de développeur web et web mobile, à <a href="https://www.laplateforme.io" target="_blank">La Plateforme_</a> avec une méthode de formation par projet. Par conséquent, même si je n'ai pas encore eu d'expérience professionnelle, j'ai eu l'occasion de faire plusieurs projets dont certains sont présentés ici.</p>
       <div id="projects_screenshots">
         <img src="assets/img/screenshots/screenshot_wip.png" alt="Screenshot de mon projet Work in Progress">
         <img src="assets/img/screenshots/screenshot_fansite.png" alt="Screenshot de mon projet de Fansite">
@@ -275,7 +275,7 @@ $title = "Nicolas Revel - Portfolio";
       <h3>Me contacter</h3>
       <p>Si mon profil vous intéresse et que vous souhaitez collaborer avec moi à l'avenir, n'hésitez pas à me contacter et je ne manquerais pas de revenir vers vous au plus vite !</p>
       <div class="links">
-        <a href="./assets/docs/CV_Nicolas_Revel_Dev.pdf" target="_blank"><button>Télécherger mon CV</button></a>
+        <a href="./assets/docs/CV_Nicolas_Revel_Dev.pdf" target="_blank"><button>Télécharger mon CV</button></a>
         <a href="mailto:nicolas.revel@laplateforme.io"><button>Me contacter</button></a>
       </div>
       <h4>Mes réseaux sociaux</h4>
