@@ -280,9 +280,9 @@ $title = "Nicolas Revel - Portfolio";
       </div>
       <h4>Mes réseaux sociaux</h4>
       <div class="socials">
-        <a href="https://twitter.com/NicoRvl_Dev"><img src="https://img.icons8.com/color/48/000000/twitter-squared.png" />Twitter</a>
-        <a href="https://www.linkedin.com/in/nicolas-revel/"><img src="https://img.icons8.com/color/48/000000/linkedin.png" />LinkedIn</a>
-        <a href="https://github.com/nicolas-revel/"><img src="https://img.icons8.com/color/48/000000/github--v1.png" />GitHub</a>
+        <a href="https://twitter.com/NicoRvl_Dev" target="_blank"><img alt="Logo de Twitter" src="https://img.icons8.com/color/48/000000/twitter-squared.png" />Twitter</a>
+        <a href="https://www.linkedin.com/in/nicolas-revel/" target="_blank"><img alt="Logo de LinkedIn" src="https://img.icons8.com/color/48/000000/linkedin.png" />LinkedIn</a>
+        <a href="https://github.com/nicolas-revel/" target="_blank"><img alt="Logo de GitHub" src="https://img.icons8.com/color/48/000000/github--v1.png" />GitHub</a>
       </div>
     </section>
   </main>
